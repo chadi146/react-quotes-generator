@@ -5,6 +5,10 @@ type TypeWriterType = {
   color: string;
 };
 
+// TODO: Maybe later on add scroll down while typing in TypeWriter when needed.
+// TODO: Add Styling for scrolling bar
+// TODO: Remove horizontal scrollbar
+// FIXME: fix issue related to TypeWriter omitting the first or second character
 const TypeWriter = ({ text, color }: TypeWriterType) => {
   const [displayedText, setDisplayedText] = useState("");
   const speed = 50;
